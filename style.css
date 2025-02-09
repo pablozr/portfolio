@@ -15,8 +15,9 @@ body {
 
 header {
     text-align: center;
-    padding: 50px 20px;
-    border-bottom: 2px solid #00ff00;
+    padding: 30px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #00ff00;
 }
 
 h1 {
@@ -34,45 +35,61 @@ section {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
+    color: #00ff00;
     margin-bottom: 20px;
+    text-align: center;
     border-bottom: 2px solid #00ff00;
     padding-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
+.sobre .box, .stack-box, .projeto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-ul li {
-    font-size: 1.2em;
+.sobre .box p {
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.stack-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.stack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack-item img {
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
 }
 
-a {
-    color: #00ff00;
-    text-decoration: none;
+.stack-item p {
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 2px solid #00ff00;
-}
-
-footer p {
-    font-size: 1em;
-    color: #00ff00;
-}
-
-/* Estilo para a seção de projetos */
 .projetos {
+    margin-top: 50px;
+}
+
+.projeto-container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 .projeto-card {
@@ -83,6 +100,11 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-10px);
 }
 
 .projeto-card img {
@@ -94,6 +116,7 @@ footer p {
 
 .projeto-info {
     padding: 20px;
+    text-align: center;
 }
 
 .projeto-info h3 {
@@ -123,4 +146,17 @@ footer p {
 .btn:hover {
     background-color: #00ff00;
     color: #121212;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #1a1a1a;
+    border-top: 3px solid #00ff00;
+}
+
+footer p {
+    font-size: 1.1em;
+    color: #00ff00;
 }
