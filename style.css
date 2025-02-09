@@ -7,7 +7,6 @@
 body {
     font-family: 'Courier New', monospace;
     background-color: #0d0d0d;
-    background: url('lain.gif');
     color: #00ff00;
     line-height: 1.6;
     margin: 0;
@@ -22,7 +21,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.9)), url('matrix-code.gif');
+    background: linear-gradient(to bottom, rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.9)), url('lain.gif');
     background-size: cover;
     z-index: -1;
     opacity: 0.5;
