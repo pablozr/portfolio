@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - [Seu Nome]</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,48 +13,76 @@
     </header>
 
     <section class="sobre">
-        <h2>Sobre</h2>
-        <p>Sou estudante de Sistemas de Informação e atualmente estou me aprofundando em Spring, além de ter experiência em Java, SpringBoot e MySQL. Estou em busca de novos desafios no mundo do desenvolvimento back-end.</p>
+        <h2>Sobre Mim</h2>
+        <div class="box">
+            <p>Sou estudante de Sistemas de Informação e atualmente estou me aprofundando em Spring, além de ter experiência em Java, SpringBoot e MySQL. Estou em busca de novos desafios no mundo do desenvolvimento back-end, com foco em tecnologias como Docker, Kubernetes e Apache Kafka.</p>
+        </div>
     </section>
 
     <section class="stack">
         <h2>Minha Stack</h2>
-        <ul>
-            <li>Java</li>
-            <li>SpringBoot</li>
-            <li>MySQL</li>
-            <li>Docker (próximos passos)</li>
-            <li>Kubernetes (próximos passos)</li>
-            <li>MongoDB (próximos passos)</li>
-            <li>Apache Kafka (próximos passos)</li>
-            <li>GraphQL (próximos passos)</li>
-        </ul>
+        <div class="stack-box">
+            <div class="stack-item">
+                <img src="java-icon.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="stack-item">
+                <img src="spring-icon.png" alt="SpringBoot">
+                <p>SpringBoot</p>
+            </div>
+            <div class="stack-item">
+                <img src="mysql-icon.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="stack-item">
+                <img src="docker-icon.png" alt="Docker">
+                <p>Docker</p>
+            </div>
+            <div class="stack-item">
+                <img src="kubernetes-icon.png" alt="Kubernetes">
+                <p>Kubernetes</p>
+            </div>
+            <div class="stack-item">
+                <img src="mongodb-icon.png" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+            <div class="stack-item">
+                <img src="kafka-icon.png" alt="Apache Kafka">
+                <p>Apache Kafka</p>
+            </div>
+            <div class="stack-item">
+                <img src="graphql-icon.png" alt="GraphQL">
+                <p>GraphQL</p>
+            </div>
+        </div>
     </section>
 
     <section class="projetos">
         <h2>Meus Projetos</h2>
-        <div class="projeto-card">
-            <img src="projeto1.png" alt="Imagem do Projeto 1">
-            <div class="projeto-info">
-                <h3>Projeto Java 1</h3>
-                <p>Descrição breve do projeto: Este projeto foi feito usando Java e SpringBoot para...</p>
-                <a href="#" class="btn">Ver Projeto</a>
+        <div class="projeto-container">
+            <div class="projeto-card">
+                <img src="projeto1.png" alt="Projeto 1">
+                <div class="projeto-info">
+                    <h3>Projeto Java 1</h3>
+                    <p>Descrição breve do projeto: Este projeto foi feito usando Java e SpringBoot para...</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
             </div>
-        </div>
-        <div class="projeto-card">
-            <img src="projeto2.png" alt="Imagem do Projeto 2">
-            <div class="projeto-info">
-                <h3>Projeto Java 2</h3>
-                <p>Descrição breve do projeto: Neste projeto, explorei integração com banco de dados MySQL...</p>
-                <a href="#" class="btn">Ver Projeto</a>
+            <div class="projeto-card">
+                <img src="projeto2.png" alt="Projeto 2">
+                <div class="projeto-info">
+                    <h3>Projeto Java 2</h3>
+                    <p>Descrição breve do projeto: Neste projeto, explorei integração com banco de dados MySQL...</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
             </div>
-        </div>
-        <div class="projeto-card">
-            <img src="projeto3.png" alt="Imagem do Projeto 3">
-            <div class="projeto-info">
-                <h3>Projeto Java 3</h3>
-                <p>Descrição breve do projeto: Um projeto desafiador envolvendo Spring e práticas de API REST...</p>
-                <a href="#" class="btn">Ver Projeto</a>
+            <div class="projeto-card">
+                <img src="projeto3.png" alt="Projeto 3">
+                <div class="projeto-info">
+                    <h3>Projeto Java 3</h3>
+                    <p>Descrição breve do projeto: Um projeto desafiador envolvendo Spring e práticas de API REST...</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
             </div>
         </div>
     </section>
