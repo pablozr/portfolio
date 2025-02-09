@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Courier New', monospace;
-    background-color: #121212;
+    background-color: #0d0d0d;
     color: #00ff00;
     line-height: 1.6;
     margin: 0;
@@ -15,19 +15,21 @@ body {
 
 header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 50px 20px;
     background-color: #1a1a1a;
-    border-bottom: 3px solid #00ff00;
+    border-bottom: 1px solid #00ff00;
 }
 
 h1 {
     font-size: 3em;
     color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
 }
 
 .intro {
     font-size: 1.2em;
     color: #00ff00;
+    opacity: 0.8;
 }
 
 section {
@@ -39,8 +41,18 @@ h2 {
     color: #00ff00;
     margin-bottom: 20px;
     text-align: center;
-    border-bottom: 2px solid #00ff00;
-    padding-bottom: 10px;
+    text-shadow: 0 0 5px #00ff00;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #00ff00;
+    margin: 10px auto 0;
+    opacity: 0.5;
 }
 
 .sobre .box, .stack-box, .projeto-container {
@@ -50,9 +62,10 @@ h2 {
 }
 
 .sobre .box p {
-    text-align: left;
+    text-align: justify;
     font-size: 1.1em;
     line-height: 1.8;
+    opacity: 0.9;
 }
 
 .stack-box {
@@ -67,6 +80,12 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.stack-item:hover {
+    opacity: 1;
 }
 
 .stack-item img {
@@ -100,18 +119,29 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projeto-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.5);
 }
 
-.projeto-card img {
+.projeto-img {
     width: 100%;
     height: 200px;
+    overflow: hidden;
+}
+
+.projeto-img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-bottom: 2px solid #00ff00;
+    transition: transform 0.3s ease;
+}
+
+.projeto-card:hover .projeto-img img {
+    transform: scale(1.1);
 }
 
 .projeto-info {
@@ -128,6 +158,7 @@ h2 {
 .projeto-info p {
     font-size: 1em;
     margin-bottom: 15px;
+    opacity: 0.8;
 }
 
 .btn {
@@ -140,7 +171,7 @@ h2 {
     color: #00ff00;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
@@ -153,10 +184,11 @@ footer {
     padding: 20px;
     margin-top: 50px;
     background-color: #1a1a1a;
-    border-top: 3px solid #00ff00;
+    border-top: 1px solid #00ff00;
 }
 
 footer p {
     font-size: 1.1em;
     color: #00ff00;
+    opacity: 0.8;
 }
